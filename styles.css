@@ -7,3 +7,5 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 
 @media(max-width:450px){.social-links{flex-wrap:wrap}.social-links a{flex:1 1 125px;text-align:center;padding:14px 15px}.social-links span{margin-left:8px}}
+
+.social-links a{display:inline-flex;align-items:center;justify-content:center;gap:10px}.social-links .social-icon{height:19px;width:19px;flex-shrink:0}.social-links a span{margin-left:0}
