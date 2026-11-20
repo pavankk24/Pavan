@@ -9,3 +9,21 @@
 @media(max-width:450px){.social-links{flex-wrap:wrap}.social-links a{flex:1 1 125px;text-align:center;padding:14px 15px}.social-links span{margin-left:8px}}
 
 .social-links a{display:inline-flex;align-items:center;justify-content:center;gap:10px}.social-links .social-icon{height:19px;width:19px;flex-shrink:0}.social-links a span{margin-left:0}
+
+/* Consistent centering for the hero portrait and all icon-label buttons. */
+.hero-actions{align-items:center}
+.portrait-area{width:100%;margin-inline:auto;align-items:center;text-align:center}
+.portrait-frame{margin-inline:auto}
+.portrait{object-position:center center}
+.portrait-caption{left:50%;bottom:0;transform:translateX(-50%);white-space:nowrap;justify-content:center}
+.social-links{align-items:stretch;justify-content:center;flex-wrap:wrap}
+.social-links a{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;min-width:150px;text-align:center;line-height:1.2}
+.social-links .social-icon{display:block;width:20px;height:20px;flex:0 0 20px;vertical-align:middle}
+.social-links a span{display:block;margin:0}
+@media(max-width:650px){.portrait-caption{left:50%;bottom:0;transform:translateX(-50%)}}
+@media(max-width:450px){.social-links a{flex:1 1 145px}}
+
+/* Ensure SVGs never inherit unexpected global alignment styles. */
+.social-links a{flex-direction:row;white-space:nowrap}
+.social-links a .social-icon{position:static;display:block;align-self:center;margin:0;padding:0}
+.social-links a span{align-self:center}
